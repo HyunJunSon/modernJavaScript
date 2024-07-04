@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 함수 선언문
+      async function foo(n) {
+        return n;
+      }
+      foo(1).then((v) => console.log(v));
+
+      // 함수 표현식
+      const bar = async function (n) {
+        return n;
+      };
+      bar(2).then((v) => console.log(v));
+
+      // 화살표 함수
+
+      const baz = async (n) => n;
+      baz(3).then((v) => console.log(v));
+
+      // async 메소드
+      const obj = {
+        async foo(n) {
+          return n;
+        },
+      };
+      obj.foo(4).then((v) => console.log(v));
+
+      // async class 메소드
+      class MyClass {
+        async bar(n) {
+          return n;
+        }
+      }
+      const myclass = new MyClass();
+      myclass.bar(5).then((v) => console.log(v));
+    </script>
+  </body>
+</html>

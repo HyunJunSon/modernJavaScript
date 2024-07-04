@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+</head>
+<body>
+    <input type="text">
+    <input type="checkbox">
+    <button>Click me!</button>
+</body>
+<script>
+    const $input = document.querySelector('input[type=text]');
+    const $checkbox = document.querySelector('input[type=checkbox]');
+    const $btn = document.querySelector('button');
+
+    onload = console.log;
+    $checkbox.onchange = console.log;
+    $input.onfocus = console.log;
+    $input.oninput = console.log;
+    $input.onkeyup = console.log;
+    $btn.onclick = console.log;
+
+</script>
+</html>

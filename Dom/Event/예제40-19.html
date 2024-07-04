@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      html, body {height: 100%;}
+      
+    </style>
+  </head>
+  <body onclick="showCoords(event)">
+    <p>클릭하세요, 틀릭한 곳의 좌표가 표시됩니다.</p>
+    <em class="message"></em>
+    <script>
+        const $msg = document.querySelector('.message');
+        
+        function showCoords(event) {
+            $msg.textContent = `clientX: ${event.clientX}, clientY: ${event.clientY}`;
+        }
+
+    </script>
+  </body>
+</html>
